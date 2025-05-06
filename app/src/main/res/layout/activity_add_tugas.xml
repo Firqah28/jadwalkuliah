@@ -1,0 +1,89 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Judul -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Tugas"
+            android:fontFamily="@font/semibolditalic"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Input Nama Tugas -->
+        <EditText
+            android:id="@+id/etNamaTugas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Tugas"
+            android:layout_marginBottom="16dp"
+            android:inputType="text" />
+
+        <!-- Input Hari -->
+        <EditText
+            android:id="@+id/etHariTugas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hari"
+            android:layout_marginBottom="16dp"
+            android:inputType="text" />
+
+        <!-- Input Deadline -->
+        <EditText
+            android:id="@+id/etDeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deadline (cth: 20 April 2025)"
+            android:layout_marginBottom="16dp"
+            android:inputType="text" />
+
+        <!-- Input Deskripsi -->
+        <EditText
+            android:id="@+id/etDeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deskripsi"
+            android:minLines="3"
+            android:gravity="top|start"
+            android:layout_marginBottom="24dp"
+            android:inputType="textMultiLine" />
+
+        <!-- Tombol Aksi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="8dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnBatalTugas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Batal"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnSimpanTugas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Simpan"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

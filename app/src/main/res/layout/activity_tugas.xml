@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_tugas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    tools:context=".TugasActivity">
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/tvJudulTugas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar Tugas"
+        android:fontFamily="@font/semibolditalic"
+        android:textSize="22sp"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="12dp" />
+
+    <!-- ListView -->
+    <ListView
+        android:id="@+id/listTugas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:padding="4dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnTambahTugas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="Tambah Tugas"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#CCCCCC"
+        app:tint="#FFFFFF"
+    />
+</LinearLayout>

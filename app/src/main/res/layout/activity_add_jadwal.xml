@@ -1,0 +1,94 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Judul -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Jadwal"
+            android:fontFamily="@font/semibolditalic"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Input Nama MK -->
+        <EditText
+            android:id="@+id/etNamaMK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Mata Kuliah"
+            android:fontFamily=""
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Input Dosen -->
+        <EditText
+            android:id="@+id/etDosen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Dosen"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Input Hari -->
+        <EditText
+            android:id="@+id/etHari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hari"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Input Jam -->
+        <EditText
+            android:id="@+id/etJam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jam (cth: 08:00 - 10:00)"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Input Ruangan -->
+        <EditText
+            android:id="@+id/etRuangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ruangan"
+            android:inputType="text"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Tombol Aksi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnBatal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batal"
+                android:textAllCaps="false"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnSimpan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Simpan"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
